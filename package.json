@@ -1,0 +1,23 @@
+{
+  "name": "torstain_2019_karttaprojekti",
+  "version": "1.0.0",
+  "description": "karttaprojekti",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suvisyrjalainen/torstain_fullstack_karttaprojekti.git"
+  },
+  "author": "Suvi Syrjalainen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suvisyrjalainen/torstain_fullstack_karttaprojekti/issues"
+  },
+  "homepage": "https://github.com/suvisyrjalainen/torstain_fullstack_karttaprojekti#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
