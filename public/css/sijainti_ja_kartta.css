@@ -1,3 +1,8 @@
+body{
+  background-color: #dce1e8;
+}
+
+
 #kartta {
   height: 400px;
   border: solid;
@@ -14,4 +19,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.oma_nappi{
+  background-color: #768a93;
+  margin: 5px;
 }

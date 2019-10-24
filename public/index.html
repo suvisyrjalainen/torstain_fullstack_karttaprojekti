@@ -2,6 +2,19 @@
 <html>
 <head>
 <title>Torstain 2019 karttaprojekti</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
    crossorigin=""/>
@@ -35,6 +48,21 @@
 <p id="leveysasteet"></p>
 
 <div id="kartta"></div>
+
+<button type="button" class="btn btn-secondary oma_nappi">Tallenna sijainti</button>
+
+<form>
+  <div class="form-group">
+    <label for="paikka">Paikka:</label>
+    <input type="text" class="form-control" id="paikka">
+  </div>
+  <div class="form-group">
+    <label for="arvostelu">Arvostelu:</label>
+    <input type="text" class="form-control" id="arvostelu">
+  </div>
+  <button type="button" class="btn btn-secondary oma_nappi">Lähetä</button>
+  <button type="button" class="btn btn-secondary oma_nappi">Peruuta</button>
+</form>
 
 </body>
 </html>
