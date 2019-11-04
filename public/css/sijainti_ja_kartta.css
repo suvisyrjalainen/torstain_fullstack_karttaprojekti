@@ -8,6 +8,10 @@ body{
   border: solid;
 }
 
+#paikkatietolomake{
+  display: none;
+}
+
 .otsikko {
   position: relative;
   text-align: center;

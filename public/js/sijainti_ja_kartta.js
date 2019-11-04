@@ -23,3 +23,21 @@ if("geolocation" in navigator) {
 else{
   console.log("Sijaintietoa ei ole saatavilla");
 }
+
+function avaa_paikkatietolomake() {
+  document.getElementById("paikkatietolomake").style.display = "block";
+  document.getElementById("lomake").reset();
+}
+
+function sulje_paikkatietolomake() {
+  document.getElementById("paikkatietolomake").style.display = "none";
+}
+
+function laheta_arvostelu(){
+  var paikka = document.getElementById("paikka").value;
+  var arvostelu = document.getElementById("arvostelu").value;
+
+  console.log(paikka);
+  console.log(arvostelu);
+
+}
