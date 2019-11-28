@@ -41,29 +41,50 @@
     </div>
 </div>
 
-<p>Pituusasteet</p>
-<p id="pituusasteet"></p>
+<div class="row">
+  <div class="col-sm-3">
+      <p>Pituusasteet</p>
+      <p id="pituusasteet"></p>
+  </div>
+  <div class="col-sm-9">
+      <p>Leveysasteet</p>
+      <p id="leveysasteet"></p>
+  </div>
+</div>
 
-<p>Leveysasteet</p>
-<p id="leveysasteet"></p>
+<div class="row">
+  <div class="col-sm-7">
 
-<div id="kartta"></div>
+    <div id="kartta"></div>
+    <button onclick="avaa_paikkatietolomake();" type="button" class="btn btn-secondary oma_nappi">Tallenna sijainti</button>
 
-<button onclick="avaa_paikkatietolomake();" type="button" class="btn btn-secondary oma_nappi">Tallenna sijainti</button>
-
-<div id="paikkatietolomake">
-  <form id="lomake">
-    <div class="form-group">
-      <label for="paikka">Paikka:</label>
-      <input type="text" class="form-control" id="paikka">
+    <div id="paikkatietolomake">
+      <form id="lomake">
+        <div class="form-group">
+          <label for="paikka">Paikka:</label>
+          <input type="text" class="form-control" id="paikka">
+        </div>
+        <div class="form-group">
+          <label for="arvostelu">Arvostelu:</label>
+          <input type="text" class="form-control" id="arvostelu">
+        </div>
+        <button onclick="laheta_arvostelu();"type="button" class="btn btn-secondary oma_nappi">Lähetä</button>
+        <button onclick="sulje_paikkatietolomake();" type="button" class="btn btn-secondary oma_nappi">Peruuta</button>
+      </form>
     </div>
-    <div class="form-group">
-      <label for="arvostelu">Arvostelu:</label>
-      <input type="text" class="form-control" id="arvostelu">
-    </div>
-    <button onclick="laheta_arvostelu();"type="button" class="btn btn-secondary oma_nappi">Lähetä</button>
-    <button onclick="sulje_paikkatietolomake();" type="button" class="btn btn-secondary oma_nappi">Peruuta</button>
-  </form>
+
+  </div>
+  <div class="col-sm-5">
+    <table id="paikkataulukko" class="table table-hover">
+      <tbody id="paikkataulukkobody">
+        <tr>
+          <th>Paikka</th>
+          <th>Arvostelu</th>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
 </div>
 
 </body>
