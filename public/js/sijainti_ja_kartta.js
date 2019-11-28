@@ -34,20 +34,21 @@ function merkitsePaikat(data){
 function tyhjenna_paikkataulukko(){
   var table = document.getElementById("paikkataulukko");
 
-  console.log(table);
+  //console.log(table);
   //document.getElementById("paikkataulukkobody").innerHTML = "";
-  console.log("Paikkataulukko tyhjataan");
+  //console.log("Paikkataulukko tyhjataan");
+
 
   var rivien_maara = table.rows.length - 1;
-  console.log(rivien_maara);
+  //console.log(rivien_maara);
 
   for (var i = 0; i < rivien_maara; i++) {
-      console.log("Paikka deletoitu" + i);
+      //console.log("Paikka deletoitu" + i);
       table.deleteRow(1);
-      console.log(table);
+      //console.log(table);
   }
 
-  console.log(table);
+  //console.log(table);
 
 }
 
@@ -61,6 +62,8 @@ function tayta_paikkataulukko(data){
     cell1.innerHTML = data[i].paikka;
     cell2.innerHTML = data[i].arvostelu;
   }
+
+  console.log(table);
 }
 
 
@@ -125,6 +128,7 @@ function laheta_arvostelu(){
     body: JSON.stringify(data)
   };
 
+  console.log(options);
 
   fetch('/api/arvostelu', options).then(function(response) {
       console.log(response)
@@ -132,7 +136,7 @@ function laheta_arvostelu(){
         tyhjenna_paikkataulukko();
         getData();
         sulje_paikkatietolomake();
-        paikka_merkitty = 1;
+        //paikka_merkitty = 1;
         //kartta.removeLayer(olet_tassa);
         //olet_tassa = L.marker([latitude, longitude]).addTo(kartta);
         //olet_tassa.bindPopup("<b>" + paikka + "</b><br>" + arvostelu).openPopup();
