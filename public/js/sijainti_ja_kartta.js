@@ -119,7 +119,7 @@ function laheta_arvostelu(){
   console.log(paikka);
   console.log(arvostelu);
 
-  const data = {latitude, longitude, paikka, arvostelu};
+  const data = {paikka, arvostelu, longitude, latitude};
   const options = {
     method: "POST",
     headers: {
